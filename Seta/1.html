@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <title>DIARY OF A WIMPY KID</title>
+  </head>
+  <body>
+    <div class="holder">
+        <h1><a class="" href="index.html">Main Page</a></h1>
+    </div>
+    <div class="img3">
+      <div class="holder">
+        <h1 class="espaco">Characters</h1>
+      </div>
+      <img src="./imagem1.png" />
+    </div>
+   
+    <h2>Greg Heffley</h2>
+    
+    <p>
+      Greg is the main character of the "Diary of a Wimpy Kid" book series. He
+      is an ordinary teenager who narrates his life and experiences in his
+      diary. Greg is often selfish and has a peculiar sense of humor, which
+      leads to funny and embarrassing situations. He longs for popularity and
+      often clashes with his older brother, Rodrick. His adventures and
+      misadventures are at the center of the narrative, and readers follow his
+      escapades with empathy and laughter
+    </p>
+
+    <script>
+      const img = document.querySelector("img");
+      const text = document.querySelector("p");
+      const h2 = document.querySelector("h2");
+
+      img.addEventListener("click", seta);
+      var num = 1;
+      function seta() {
+        if (num < 7) {
+          num++;
+          if (num == 2) {
+            text.innerHTML = "Frank is Greg's father. He is a man who values discipline and responsibility, often disagreeing with his older son, Greg, because of his antics. He works hard to support his family and is a loving father, although he sometimes seems to not fully understand Greg's concerns.";
+            h2.innerText = "Frank Heffley";
+          }
+          if (num == 3) {
+            text.innerHTML = "Susan is Greg's mother. She is a dedicated and caring mother who tries to maintain harmony in the family. She often plays the role of a mediator in disputes between Greg and his siblings. Susan is a character who values her family's well-being above all else.";
+            h2.innerText = "Susan Heffley";
+          }
+          if (num == 4) {
+            text.innerHTML = "Rodrick is Greg's older brother. He is a rebellious teenager and often engages in questionable activities. His relationship with Greg is tense, with the two often clashing. However, at times, they also show mutual affection. Rodrick is an important figure in Greg's life, often influencing his decisions";
+            h2.innerText = "Rodrick Heffley";
+          }
+          if (num == 5) {
+            text.innerHTML = " Manny is Greg's younger brother. He is a small child and often acts in a childish and spoiled manner. Manny can be annoying to Greg, but he is also a humorous part of the family dynamics.";
+            h2.innerText = "Manny Heffley";
+          }
+          if (num == 6) {
+            text.innerHTML = "Rowley is Greg's best friend and plays a significant role in his life. He is loyal, naive, and often gets dragged into the crazy situations that Greg gets into. The friendship between Greg and Rowley is central to the series, and Rowley is often the voice of reason in Greg's situations.";
+            h2.innerText = "Rowley Jefferson";
+          }
+          if (num == 7) {
+            text.innerHTML = `The cheese in "Diary of a Wimpy Kid" is a recurring symbol and one of the greatest antagonists in the book series. Abandoned and forgotten since time immemorial on the school's basketball court, this piece of cheese, covered in footprints, fungi, and filth, represents Greg Heffley's misadventures in a way that no other object could. With its persistent presence and the antics surrounding its journey throughout the books, the cheese becomes an iconic element of the series. `;
+            h2.innerText = "The Cheese";
+          }
+        } else {
+          num = 1;
+          text.innerHTML =
+            'Greg is the main character of the "Diary of a Wimpy Kid" book series. He is an ordinary teenager who narrates his life and experiences in his diary. Greg is often selfish and has a peculiar sense of humor, which leads to funny and embarrassing situations. He longs for popularity and often clashes with his older brother, Rodrick. His adventures and misadventures are at the center of the narrative, and readers follow his escapades with empathy and laughter';
+            h2.innerText= "Greg Heffley";
+        }
+        img.src = `imagem${num}.png`;
+      }
+
+    </script>
+
+    <p class="next">Click in the image to see next</p>
+
+  </body>
+</html>

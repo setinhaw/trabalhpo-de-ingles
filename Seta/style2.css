@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(44, 57, 75 );
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+    background-repeat:repeat;
+    background-size: 100%;
+}
+
+.img{
+    text-align: center;
+    margin-top: 200px;    
+}
+
+.img img{
+    cursor: pointer;
+    height: 405px;
+    width: 690px;
+    border: 30px solid black;
+}
+ h1 {
+    font-family: Montserrat;
+    color: orangered;
+    text-align: center;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 1rem;
+}
+.holder h1:hover {
+    letter-spacing: .7rem;
+  }
+h2 {
+    font-family: Montserrat;
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+p{
+    font-size: 18px;
+    font-family: Montserrat;
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+
+.overlay {
+    margin-top: -200px;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -5;
+}
+
+.overlay img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.link {
+    text-align: center;
+}
+
+a{
+    font-size: 18px;
+    font-family: Montserrat;
+    color: rgb(0, 0, 0);
+    margin: 0 50px;
+    text-decoration: none;
+}
+.tamanho{
+    height: 450px;
+    width: 450px;
+    border: 30px solid black;
+}
+.espaco{
+    margin-top: 50px;    
+}
+.cor{
+    color: orange;
+}
+.cor:nth-child(1){
+    margin-top: 30px;
+}
+.cor:nth-child(2){
+    margin-top: 40px;
+}
+.cor:nth-child(3){
+    margin-top: 50px;
+}
+.cor:nth-child(4){
+    margin-top: 60px;
+}
+.cor:nth-child(5){
+    margin-top: 70px;
+}
+.cor:nth-child(6){
+    margin-top: 80px;
+}
+.flex{
+    display:flex;
+}
